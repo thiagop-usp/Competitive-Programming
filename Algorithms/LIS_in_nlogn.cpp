@@ -11,7 +11,7 @@ int lis(int n){
 	{
 		auto it = lower_bound(I.begin(), I.end(), vet[i]);
 		
-		/* if vet[i] has its lowerbound in I (the lowest among the numbers that are greater or equal to vet[i]), 
+		/* If vet[i] has its lowerbound in I (the lowest among the numbers that are greater or equal to vet[i]), 
 		then that element in I should be replaced
 		*/
 		if(it != I.end()) *it = vet[i]; 
@@ -26,16 +26,16 @@ int lis(int n){
 		
 		I: -inf | 4 | 6 | 7
 		Let's say vet[i] is 3, that way, its lowerbound is in I and it's 4 (the lowest among the numbers that
-		are greater than 3)
+		are greater than or equal to 3)
 		
 		That way, the vector will be:
 		I: -inf | 3 | 6 | 7
 		
-		Let's say now that vet[i] is 8, which doesnt have a lowerbound in I, then, the vector will be:
+		Let's say now that vet[i] is 8, which doesn't have a lowerbound in I, then, the vector will be:
 		I: -inf | 3 | 6 | 7 | 8
 		
 		and the new LIS size will be 4 (we don't consider -inf, as it was only added at first so that the first element
-		in vet would have a lowerbound in I, given that -inf is, in theory, lower than any other number
+		in vet wouldn't have a lowerbound in I, given that -inf is, in theory, lower than any other integer.
 		*/
 	}
 	return llength;
