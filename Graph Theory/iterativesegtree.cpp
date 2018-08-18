@@ -27,7 +27,7 @@ other child.
 */
 
 void update(int p, int x){
-  p+=n;
+  	p+=n;
 	for(st[p] = x; p>0; p/=2) 
 	    st[p/2]=st[p]+st[p+1];
 }
