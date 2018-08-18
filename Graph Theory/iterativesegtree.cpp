@@ -73,5 +73,5 @@ int main(){
 	    cin >> st[i+n];
 	    
 	build();
-  return 0;
+	return 0;
 }
