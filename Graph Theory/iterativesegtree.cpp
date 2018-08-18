@@ -1,3 +1,6 @@
+// Source: https://codeforces.com/blog/entry/18051
+// I thought the source was a good resource but the explanation behind it wasn't given too much thought.
+
 #include <bits/stdc++.h>
 using namespace std;
 
