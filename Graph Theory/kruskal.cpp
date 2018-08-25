@@ -15,7 +15,7 @@ int dad[MAXN]; 				// parent of each node
 
 int Find(int x){
 	if(x==dad[x]) return x; 		// if that node is the root of the tree (it's the pivot of the subset it's in)
-	return x = Find(dad[x]);		// keep climbing the tree to find its root
+	return dad[x] = Find(dad[x]);		// keep climbing the tree to find its root
 }
 
 void Union(int x, int y){
